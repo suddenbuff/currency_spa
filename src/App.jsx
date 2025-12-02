@@ -28,7 +28,7 @@ const App = () => {
     if (error) return <p>Ошибка получения данных с api</p>
 
     return <>
-        <BrowserRouter>
+        <BrowserRouter basename="/currency_spa">
             <div className="appContainer">
                 <nav>
                     <NavLink to="/" className={({ isActive }) => (isActive ? "navLink active" : "navLink")}>Конвертер</NavLink>
